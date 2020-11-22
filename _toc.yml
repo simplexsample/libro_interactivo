@@ -1,8 +1,17 @@
 # Table of content
 # Learn more at https://jupyterbook.org/customize/toc.html
 #
-- file: intro
-- file: content
-  sections:
-    - file: markdown
-    - file: notebooks
+
+- file: introduccion
+
+- part: aprendizaje
+  chapters:
+  - file: aprendizaje/prueba_y_error
+
+- part: Matematicas
+  chapters:
+  - file: matematica/matematica_computacional
+  - file: matematica/funciones/intro
+    sections:
+    - file: matematica/funciones/lineal
+    - file: matematica/funciones/cuadratica
