@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>?Es verdad que existe una unica funcion cuadratica? &#8212; Libro interactico</title>
+    <title>¿Es verdad que existe una única función cuadrática? &#8212; Libro interactico</title>
     
   <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -46,6 +46,10 @@
     <script src="../../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe,.cell"
@@ -55,7 +59,7 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="prev" title="?Es verdad que existe una unica funcion lineal?" href="lineal.html" />
+    <link rel="prev" title="¿Es verdad que existe una única función lineal?" href="lineal.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -88,7 +92,7 @@
     <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../../introduccion.html">
-   Introduccion al aprendizaje interactivo
+   Introducción al aprendizaje interactivo
   </a>
  </li>
 </ul>
@@ -112,22 +116,27 @@
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../matematica_computacional.html">
-   Que es la matematica computacional?
+   ¿Qué es la matemática computacional?
   </a>
  </li>
  <li class="toctree-l1 current active collapsible-parent">
   <a class="reference internal" href="intro.html">
-   Introduccion a las funciones matematicas
+   Introducción a las funciones matemáticas
   </a>
   <ul class="current collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="lineal.html">
-     ?Es verdad que existe una unica funcion lineal?
+     ¿Es verdad que existe una única función lineal?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lineal.html#ejemplos">
+     Ejemplos
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     ?Es verdad que existe una unica funcion cuadratica?
+     ¿Es verdad que existe una única función cuadrática?
     </a>
    </li>
   </ul>
@@ -242,22 +251,22 @@
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#posicion-en-el-movimiento-acelerado">
-   Posicion en el movimiento acelerado
+   Posición en el movimiento acelerado
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#energia-cinetica-de-un-cuerpo">
-   Energia cinetica de un cuerpo
+   Energía cinética de un cuerpo
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#energia-elastica-de-un-resorte">
-   Energia elastica de un resorte
+   Energía elástica de un resorte
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#area-de-un-rectangulo">
-   Area de un rectangulo
+  <a class="reference internal nav-link" href="#area-de-un-cuadrado">
+   Área de un cuadrado
   </a>
  </li>
 </ul>
@@ -272,7 +281,7 @@
               <div>
                 
   <div class="section" id="es-verdad-que-existe-una-unica-funcion-cuadratica">
-<h1>?Es verdad que existe una unica funcion cuadratica?<a class="headerlink" href="#es-verdad-que-existe-una-unica-funcion-cuadratica" title="Permalink to this headline">¶</a></h1>
+<h1>¿Es verdad que existe una única función cuadrática?<a class="headerlink" href="#es-verdad-que-existe-una-unica-funcion-cuadratica" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sympy</span>
@@ -314,17 +323,24 @@ Documentation can be found at https://docs.sympy.org/1.6.2/
 <img alt="../../_images/cuadratica_3_0.png" src="../../_images/cuadratica_3_0.png" />
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Ejemplos</span>
+</pre></div>
+</div>
+</div>
+</div>
 <div class="section" id="posicion-en-el-movimiento-acelerado">
-<h2>Posicion en el movimiento acelerado<a class="headerlink" href="#posicion-en-el-movimiento-acelerado" title="Permalink to this headline">¶</a></h2>
+<h2>Posición en el movimiento acelerado<a class="headerlink" href="#posicion-en-el-movimiento-acelerado" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="energia-cinetica-de-un-cuerpo">
-<h2>Energia cinetica de un cuerpo<a class="headerlink" href="#energia-cinetica-de-un-cuerpo" title="Permalink to this headline">¶</a></h2>
+<h2>Energía cinética de un cuerpo<a class="headerlink" href="#energia-cinetica-de-un-cuerpo" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="energia-elastica-de-un-resorte">
-<h2>Energia elastica de un resorte<a class="headerlink" href="#energia-elastica-de-un-resorte" title="Permalink to this headline">¶</a></h2>
+<h2>Energía elástica de un resorte<a class="headerlink" href="#energia-elastica-de-un-resorte" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="area-de-un-rectangulo">
-<h2>Area de un rectangulo<a class="headerlink" href="#area-de-un-rectangulo" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="area-de-un-cuadrado">
+<h2>Área de un cuadrado<a class="headerlink" href="#area-de-un-cuadrado" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -356,7 +372,7 @@ Documentation can be found at https://docs.sympy.org/1.6.2/
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="lineal.html" title="previous page">?Es verdad que existe una unica funcion lineal?</a>
+    <a class='left-prev' id="prev-link" href="lineal.html" title="previous page">¿Es verdad que existe una única función lineal?</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

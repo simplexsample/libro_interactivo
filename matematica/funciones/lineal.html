@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>?Es verdad que existe una unica funcion lineal? &#8212; Libro interactico</title>
+    <title>¿Es verdad que existe una única función lineal? &#8212; Libro interactico</title>
     
   <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -46,6 +46,10 @@
     <script src="../../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe,.cell"
@@ -55,8 +59,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="?Es verdad que existe una unica funcion cuadratica?" href="cuadratica.html" />
-    <link rel="prev" title="Introduccion a las funciones matematicas" href="intro.html" />
+    <link rel="next" title="¿Es verdad que existe una única función cuadrática?" href="cuadratica.html" />
+    <link rel="prev" title="Introducción a las funciones matemáticas" href="intro.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -89,7 +93,7 @@
     <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../../introduccion.html">
-   Introduccion al aprendizaje interactivo
+   Introducción al aprendizaje interactivo
   </a>
  </li>
 </ul>
@@ -113,22 +117,27 @@
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../matematica_computacional.html">
-   Que es la matematica computacional?
+   ¿Qué es la matemática computacional?
   </a>
  </li>
  <li class="toctree-l1 current active collapsible-parent">
   <a class="reference internal" href="intro.html">
-   Introduccion a las funciones matematicas
+   Introducción a las funciones matemáticas
   </a>
   <ul class="current collapse-ul">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     ?Es verdad que existe una unica funcion lineal?
+     ¿Es verdad que existe una única función lineal?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="#ejemplos">
+     Ejemplos
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="cuadratica.html">
-     ?Es verdad que existe una unica funcion cuadratica?
+     ¿Es verdad que existe una única función cuadrática?
     </a>
    </li>
   </ul>
@@ -241,20 +250,47 @@
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#posicion-de-un-objeto-que-se-mueve-de-manera-uniforme">
-   Posicion de un objeto que se mueve de manera uniforme
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   ¿Es verdad que existe una única función lineal?
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#velocidad-de-un-objeto-que-acelera-de-manera-uniforme">
-   Velocidad de un objeto que acelera de manera uniforme
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ejemplos">
+   Ejemplos
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#proporciones">
-   Proporciones
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#posicion-de-un-objeto-que-se-mueve-de-manera-uniforme">
+     Posición de un objeto que se mueve de manera uniforme
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#velocidad-de-un-objeto-que-acelera-de-manera-uniforme">
+     Velocidad de un objeto que acelera de manera uniforme
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#proporciones">
+     Proporciones
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#perimetro-de-un-cuadrado">
+     Perimetro de un cuadrado
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ley-de-ohm">
+     Ley de Ohm
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ley-de-los-gases-ideales">
+     Ley de los Gases Ideales
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -268,11 +304,14 @@
               <div>
                 
   <div class="section" id="es-verdad-que-existe-una-unica-funcion-lineal">
-<h1>?Es verdad que existe una unica funcion lineal?<a class="headerlink" href="#es-verdad-que-existe-una-unica-funcion-lineal" title="Permalink to this headline">¶</a></h1>
+<h1>¿Es verdad que existe una única función lineal?<a class="headerlink" href="#es-verdad-que-existe-una-unica-funcion-lineal" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sympy</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">FloatSlider</span><span class="p">,</span> <span class="n">FloatText</span><span class="p">,</span> <span class="n">Layout</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">sympy</span>
 <span class="n">sympy</span><span class="o">.</span><span class="n">init_session</span><span class="p">()</span>
+<span class="c1"># %matplotlib inline</span>
 </pre></div>
 </div>
 </div>
@@ -307,8 +346,79 @@ Documentation can be found at https://docs.sympy.org/1.6.2/
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m_slider</span> <span class="o">=</span> <span class="n">FloatSlider</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Pendiente&#39;</span><span class="p">)</span>
+<span class="n">b_slider</span> <span class="o">=</span> <span class="n">FloatSlider</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Ordenada al origen&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m_slider</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "2a204aaa95bd457ab2fc1e8561348779"}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p1</span> <span class="o">=</span> <span class="n">plot</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="n">m</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="n">b</span><span class="p">:</span><span class="mi">5</span><span class="p">}))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7f05c1aaa6d0&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">r</span><span class="o">=</span><span class="n">lambdify</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="n">m</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="n">b</span><span class="p">:</span><span class="mi">5</span><span class="p">}))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">bqplot.pyplot</span> <span class="k">as</span> <span class="nn">blt</span>
+<span class="kn">import</span> <span class="nn">bqplot</span>
+<span class="kn">import</span> <span class="nn">numpy</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">blt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">tt</span><span class="o">=</span> <span class="n">bqplot</span><span class="o">.</span><span class="n">Tooltip</span><span class="p">(</span><span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;index&#39;</span><span class="p">],</span> <span class="n">formats</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;.1f&#39;</span><span class="p">,</span> <span class="s1">&#39;.2f&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">])</span>
+<span class="c1"># blt.scatter(x=t,y=r(t),tooltip=tt)</span>
+<span class="n">blt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">r</span><span class="p">(</span><span class="n">t</span><span class="p">),</span><span class="s1">&#39;m:d&#39;</span><span class="p">,</span><span class="n">colors</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;orangered&#39;</span><span class="p">])</span>
+<span class="n">blt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-9-d2df8140a50c&gt;&quot;</span><span class="gt">, line </span><span class="mi">5</span>
+    <span class="n">blt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">r</span><span class="p">(</span><span class="n">t</span><span class="p">),</span><span class="s1">&#39;m:d&#39;</span><span class="p">,</span><span class="n">colors</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;orangered&#39;</span><span class="p">])</span>
+                        <span class="o">^</span>
+<span class="ne">SyntaxError</span>: positional argument follows keyword argument
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="ejemplos">
+<h1>Ejemplos<a class="headerlink" href="#ejemplos" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="posicion-de-un-objeto-que-se-mueve-de-manera-uniforme">
-<h2>Posicion de un objeto que se mueve de manera uniforme<a class="headerlink" href="#posicion-de-un-objeto-que-se-mueve-de-manera-uniforme" title="Permalink to this headline">¶</a></h2>
+<h2>Posición de un objeto que se mueve de manera uniforme<a class="headerlink" href="#posicion-de-un-objeto-que-se-mueve-de-manera-uniforme" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="velocidad-de-un-objeto-que-acelera-de-manera-uniforme">
 <h2>Velocidad de un objeto que acelera de manera uniforme<a class="headerlink" href="#velocidad-de-un-objeto-que-acelera-de-manera-uniforme" title="Permalink to this headline">¶</a></h2>
@@ -316,7 +426,24 @@ Documentation can be found at https://docs.sympy.org/1.6.2/
 <div class="section" id="proporciones">
 <h2>Proporciones<a class="headerlink" href="#proporciones" title="Permalink to this headline">¶</a></h2>
 </div>
+<div class="section" id="perimetro-de-un-cuadrado">
+<h2>Perimetro de un cuadrado<a class="headerlink" href="#perimetro-de-un-cuadrado" title="Permalink to this headline">¶</a></h2>
 </div>
+<div class="section" id="ley-de-ohm">
+<h2>Ley de Ohm<a class="headerlink" href="#ley-de-ohm" title="Permalink to this headline">¶</a></h2>
+<p><span class="math notranslate nohighlight">\( V = IR \)</span></p>
+</div>
+<div class="section" id="ley-de-los-gases-ideales">
+<h2>Ley de los Gases Ideales<a class="headerlink" href="#ley-de-los-gases-ideales" title="Permalink to this headline">¶</a></h2>
+<p><span class="math notranslate nohighlight">\(PV = nkT\)</span></p>
+</div>
+</div>
+
+
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"12b5ab55cb7546518f4156797e6e3892": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {}}, "64567804c2e54a1c965c17a35cf69a4a": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "SliderStyleModel", "state": {"description_width": ""}}, "6e56f85b0ec544a380f6dae67e0a0619": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatSliderModel", "state": {"description": "Ordenada al origen", "layout": "IPY_MODEL_12b5ab55cb7546518f4156797e6e3892", "step": 0.1, "style": "IPY_MODEL_c396abd3bade4704beb8ad31ddb5459f"}}, "991f4675f73148ddaee36a4de5a2362a": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {}}, "99ce700e108b48ee83870cb6a686c530": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatSliderModel", "state": {"description": "Pendiente", "layout": "IPY_MODEL_991f4675f73148ddaee36a4de5a2362a", "step": 0.1, "style": "IPY_MODEL_64567804c2e54a1c965c17a35cf69a4a"}}, "c396abd3bade4704beb8ad31ddb5459f": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "SliderStyleModel", "state": {"description_width": ""}}}, "version_major": 2, "version_minor": 0}
+</script>
+
 
     <script type="text/x-thebe-config">
     {
@@ -346,8 +473,8 @@ Documentation can be found at https://docs.sympy.org/1.6.2/
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">Introduccion a las funciones matematicas</a>
-    <a class='right-next' id="next-link" href="cuadratica.html" title="next page">?Es verdad que existe una unica funcion cuadratica?</a>
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">Introducción a las funciones matemáticas</a>
+    <a class='right-next' id="next-link" href="cuadratica.html" title="next page">¿Es verdad que existe una única función cuadrática?</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

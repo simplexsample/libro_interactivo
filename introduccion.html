@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduccion al aprendizaje interactivo &#8212; Libro interactico</title>
+    <title>Introducción al aprendizaje interactivo &#8212; Libro interactico</title>
     
   <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -46,6 +46,10 @@
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe,.cell"
@@ -88,7 +92,7 @@
     <ul class="nav sidenav_l1">
  <li class="toctree-l1 current active">
   <a class="reference internal" href="#">
-   Introduccion al aprendizaje interactivo
+   Introducción al aprendizaje interactivo
   </a>
  </li>
 </ul>
@@ -112,22 +116,27 @@
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="matematica/matematica_computacional.html">
-   Que es la matematica computacional?
+   ¿Qué es la matemática computacional?
   </a>
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="matematica/funciones/intro.html">
-   Introduccion a las funciones matematicas
+   Introducción a las funciones matemáticas
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="matematica/funciones/lineal.html">
-     ?Es verdad que existe una unica funcion lineal?
+     ¿Es verdad que existe una única función lineal?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="matematica/funciones/lineal.html#ejemplos">
+     Ejemplos
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="matematica/funciones/cuadratica.html">
-     ?Es verdad que existe una unica funcion cuadratica?
+     ¿Es verdad que existe una única función cuadrática?
     </a>
    </li>
   </ul>
@@ -242,19 +251,26 @@
             <ul class="nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   Introduccion al aprendizaje interactivo
+   Introducción al aprendizaje interactivo
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#como-puedo-usar-esto">
-   Como puedo usar esto?
+   ¿Cómo puedo usar esto?
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#a-quien-esta-dirigido">
-   A quien esta dirigido?
+   ¿A quién está dirigido?
   </a>
   <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ya-existen-muchos-projectos-colaborativos-que-diferencia-a-este">
+     Ya existen muchos projectos colaborativos, ¿qué diferencia a éste?
+    </a>
+    <ul class="nav section-nav flex-column">
+    </ul>
+   </li>
   </ul>
  </li>
 </ul>
@@ -269,29 +285,44 @@
               <div>
                 
   <div class="section" id="introduccion-al-aprendizaje-interactivo">
-<h1>Introduccion al aprendizaje interactivo<a class="headerlink" href="#introduccion-al-aprendizaje-interactivo" title="Permalink to this headline">¶</a></h1>
-<p>Que es este lugar?</p>
+<h1>Introducción al aprendizaje interactivo<a class="headerlink" href="#introduccion-al-aprendizaje-interactivo" title="Permalink to this headline">¶</a></h1>
+<p>¿Qué es este lugar?</p>
 <ul class="simple">
-<li><p>Tener un espacio para poder experimentar</p></li>
+<li><p>Un espacio para poder experimentar</p></li>
 </ul>
-<p>En que sentido <em>experimentar</em>?</p>
+<p>¿En qué sentido <em>experimentar</em>?</p>
 <ul class="simple">
 <li><p>Conocer y aprender formas del pensamiento computacional</p></li>
-<li><p>Aprender a realizar trabajo colaborativo</p>
-<ul>
-<li><p>Conocer las herramientas, las metodologias y los distintos procesos</p></li>
-</ul>
-</li>
+<li><p>Aprender a realizar trabajo colaborativo</p></li>
+<li><p>Conocer las herramientas, las metodologías y los distintos procesos necesarios para poder colaborar</p></li>
 </ul>
 </div>
 <div class="section" id="como-puedo-usar-esto">
-<h1>Como puedo usar esto?<a class="headerlink" href="#como-puedo-usar-esto" title="Permalink to this headline">¶</a></h1>
+<h1>¿Cómo puedo usar esto?<a class="headerlink" href="#como-puedo-usar-esto" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Como fuente de inspiracion para crear tu propio proyecto</p></li>
+<li><p>Como espacio para aprender</p></li>
+<li><p>Como un espacio para compartir tus conocimientos</p></li>
+</ul>
 </div>
 <div class="section" id="a-quien-esta-dirigido">
-<h1>A quien esta dirigido?<a class="headerlink" href="#a-quien-esta-dirigido" title="Permalink to this headline">¶</a></h1>
+<h1>¿A quién está dirigido?<a class="headerlink" href="#a-quien-esta-dirigido" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Quien quiera aprender a programar realizando mini tareas y explicando algo aplicado</p></li>
+<li><p>Quien quiera aprender a utilizar las herramientas colaborativas y sus procesos</p></li>
+<li><p>Quien quiera aprender buenas practicas de desarrollo y armado de material educativo</p></li>
+<li><p>Quien quiera enseñar un tema especifico aprovechando la interactividad</p></li>
+<li><p>Quien quiera experimentar nuevas formas de generar material</p></li>
+</ul>
+<p>Bueno, se dan una idea …</p>
+<div class="section" id="ya-existen-muchos-projectos-colaborativos-que-diferencia-a-este">
+<h2>Ya existen muchos projectos colaborativos, ¿qué diferencia a éste?<a class="headerlink" href="#ya-existen-muchos-projectos-colaborativos-que-diferencia-a-este" title="Permalink to this headline">¶</a></h2>
+<p>Si, existen varios projectos colaborativos donde se genera mucho material como (https://www.wikipedia.org/) o https://www.algorithm-archive.org/, pero el foco de estos proyectos es el contenido.</p>
+<p>Acá lo que nos importa es el proceso de cómo generar el contenido y qué este contenido sea solo una excusa para aprender otras habilidades y herramientas.</p>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
+</div>
 </div>
 </div>
 
