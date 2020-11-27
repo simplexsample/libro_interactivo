@@ -46,6 +46,10 @@
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe,.cell"
@@ -87,7 +91,19 @@
     <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="introduccion.html">
-   Introduccion al aprendizaje interactivo
+   Introducción al aprendizaje interactivo
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  como usar
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="como_usar/como_usar.html">
+   ¿Cómo puedo usar el Libro Interactivo?
   </a>
  </li>
 </ul>
@@ -111,22 +127,27 @@
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="matematica/matematica_computacional.html">
-   Que es la matematica computacional?
+   ¿Qué es la matemática computacional?
   </a>
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="matematica/funciones/intro.html">
-   Introduccion a las funciones matematicas
+   Introducción a las funciones matemáticas
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="matematica/funciones/lineal.html">
-     ?Es verdad que existe una unica funcion lineal?
+     ¿Es verdad que existe una única función lineal?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="matematica/funciones/lineal.html#ejemplos">
+     Ejemplos
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="matematica/funciones/cuadratica.html">
-     ?Es verdad que existe una unica funcion cuadratica?
+     ¿Es verdad que existe una única función cuadrática?
     </a>
    </li>
   </ul>

@@ -4,6 +4,10 @@
 
 - file: introduccion
 
+- part: como usar
+  chapters:  
+  - file: como_usar/como_usar
+
 - part: aprendizaje
   chapters:
   - file: aprendizaje/prueba_y_error
@@ -15,3 +19,5 @@
     sections:
     - file: matematica/funciones/lineal
     - file: matematica/funciones/cuadratica
+
+
